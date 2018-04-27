@@ -1,0 +1,97 @@
+//Matthew Skipworth
+//TCES330
+//Friday Section
+module Bin_to_BCD(E, F, V);
+	input [3:0] V; //binary input.
+	output reg [3:0] E, F;
+ //BCD output.
+ 
+ //Double Dabble implementation.
+	
+	
+	reg [3:0] tens, ones;
+	
+	always @(V) begin
+		if(V>9) begin
+			tens = 4'd1;
+			ones = V - 4'd10;
+		end else begin
+			tens = 4'd0;
+			ones = V;	
+		end
+	end
+	
+	assign E[3:1] = 0;
+	assign E[0] = tens;
+	assign F = ones;
+	/*
+	
+reg [7:0] D;
+integer i;
+//reg [7:0] temp;
+//logic [7:0] zero = 8b'00000000;
+//zero = 8b'00000000;
+//temp[3:0] = 0 | V;
+//or(temp[3:0], V, 0);
+ //temp = temp | V[1];
+	always_comb //@(V)
+	
+//	integer i;
+	//V = 0;
+		begin
+
+			D = 0;
+			for (i = 0; i < 4; i=i+1) //for each bit in V...
+			begin
+				D = D << 1; //SLL
+		//		temp = temp << 1;
+				D[0] = V[3-i]; //OR the output D with that bit
+			//	D = D << 1; //SLL
+				if (i == 2) begin //When D gets to be 3 bits wide add 3
+		//			temp = temp + 3;
+					D = D + 8'd3;
+		//			temp = temp << 1;
+					
+				end
+				
+		//		D = temp | 0;
+			end
+		 E = D[7:4];
+		 F = D[3:0];	
+		end
+
+endmodule
+
+module bin_to_BCD_testbench;
+	logic [7:0] D;
+	logic [3:0] V;
+	logic [3:0] E;
+	logic [3:0] F;
+	Bin_to_BCD dut(D, E, F, V);
+		logic [3:0] j;
+		initial begin
+		//	V = 0;
+			for (j = 0; j < 16; j++) begin
+				V = j; 
+				$display( " V V D E F" );
+				$monitor( "%d %4b %d %4b %4b", V, V, D, E, F);
+				#10;			
+			end
+			$finish;
+		end*/
+endmodule
+
+//y = A'B'C' + A'C'D' + AB'C + ACD' hex0,0
+//y = A'BC + BCD + A'B'C'D' + AB'CD' hex0,1
+//y = A'B'D' + B'CD' + ABC'D' hex0,2
+//y = A'B'C' + A'C'D' + AB'C + ACD' + A'BCD hex0,3
+//y = D + A'C' + AC hex0,4
+//y = A'B' + B'C + A'CD + ABC' hex0,5
+//y = A'B'C' + AB'C + A'BCD
+//y = AC + AB hex1,0
+//y = 0 hex1,1
+//y = 0 hex1,2
+//y = AC + AB hex1,3
+//y = AC + AB hex1,4
+//y = AC + AB hex1,5
+//y = AC + AB hex1,6

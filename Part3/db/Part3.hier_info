@@ -1,0 +1,212 @@
+|Part3
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => LEDR[9].DATAIN
+SW[10] => LEDR[10].DATAIN
+SW[11] => LEDR[11].DATAIN
+SW[12] => LEDR[12].DATAIN
+SW[13] => LEDR[13].DATAIN
+SW[14] => LEDR[14].DATAIN
+SW[15] => LEDR[15].DATAIN
+SW[16] => LEDR[16].DATAIN
+SW[17] => LEDR[17].DATAIN
+LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] << SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] << SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] << SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] << SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] << SW[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] << SW[9].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[10] << SW[10].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[11] << SW[11].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[12] << SW[12].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[13] << SW[13].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[14] << SW[14].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[15] << SW[15].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[16] << SW[16].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[17] << SW[17].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] << HexHEXI:G1.port0
+HEX0[5] << HexHEXI:G1.port0
+HEX0[4] << HexHEXI:G1.port0
+HEX0[3] << HexHEXI:G1.port0
+HEX0[2] << HexHEXI:G1.port0
+HEX0[1] << HexHEXI:G1.port0
+HEX0[0] << HexHEXI:G1.port0
+HEX1[6] << HexHEXI:G2.port0
+HEX1[5] << HexHEXI:G2.port0
+HEX1[4] << HexHEXI:G2.port0
+HEX1[3] << HexHEXI:G2.port0
+HEX1[2] << HexHEXI:G2.port0
+HEX1[1] << HexHEXI:G2.port0
+HEX1[0] << HexHEXI:G2.port0
+
+
+|Part3|Four_Bit_Ripple_Carry_Adder:M1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Ci => Ci.IN1
+Cout <= Full_Adder:U3.port3
+Sum[0] <= Full_Adder:U0.port4
+Sum[1] <= Full_Adder:U1.port4
+Sum[2] <= Full_Adder:U2.port4
+Sum[3] <= Full_Adder:U3.port4
+
+
+|Part3|Four_Bit_Ripple_Carry_Adder:M1|Full_Adder:U0
+A => X.IN0
+B => X.IN1
+B => Cout.IN1
+Ci => Cout.IN1
+Ci => comb.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Four_Bit_Ripple_Carry_Adder:M1|Full_Adder:U1
+A => X.IN0
+B => X.IN1
+B => Cout.IN1
+Ci => Cout.IN1
+Ci => comb.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Four_Bit_Ripple_Carry_Adder:M1|Full_Adder:U2
+A => X.IN0
+B => X.IN1
+B => Cout.IN1
+Ci => Cout.IN1
+Ci => comb.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Four_Bit_Ripple_Carry_Adder:M1|Full_Adder:U3
+A => X.IN0
+B => X.IN1
+B => Cout.IN1
+Ci => Cout.IN1
+Ci => comb.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|HexHEXI:G1
+Hex[6] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN0
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN0
+S[1] => Hex.IN0
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN0
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN0
+S[2] => Hex.IN0
+S[2] => Hex.IN0
+S[2] => Hex.IN1
+S[2] => Hex.IN0
+S[2] => Hex.IN0
+S[2] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+
+
+|Part3|HexHEXI:G2
+Hex[6] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN0
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[0] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN0
+S[1] => Hex.IN0
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN0
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN1
+S[1] => Hex.IN0
+S[2] => Hex.IN0
+S[2] => Hex.IN0
+S[2] => Hex.IN1
+S[2] => Hex.IN0
+S[2] => Hex.IN0
+S[2] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+S[3] => Hex.IN1
+
+

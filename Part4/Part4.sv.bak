@@ -1,0 +1,16 @@
+module Part4(SW, LEDR, HEX6, HEX4, HEX1, HEX0, LEDG);
+
+	input [17:0] SW;
+	output [17:0] LEDR;
+	output [6:0] HEX0, HEX1, HEX4, HEX6;
+	output [3:0] LEDG;
+	
+	logic [3:0] S0, S1;
+	
+	BCD_Add B1(SW[7:4], SW[3:0], SW[8], S0, S1);
+	
+
+		HexHEXI G1(HEX0, S0);
+		HexHEXI G2(HEX1, S1);
+
+endmodule

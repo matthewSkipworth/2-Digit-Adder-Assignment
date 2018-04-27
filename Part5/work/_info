@@ -1,0 +1,202 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UWT/TCES330/labs/HW2/Part5
+vBCD_Add
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1524808848
+!i10b 1
+!s100 KGDbFGNjAij;;8nkKYKF11
+IdB^4czI1fOeB2i@dF09>z2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 BCD_Add_sv_unit
+S1
+R0
+Z5 w1524800408
+Z6 8./BCD_Add.sv
+Z7 F./BCD_Add.sv
+L0 3
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1524808848.000000
+Z10 !s107 ./BCD_Add.sv|
+Z11 !s90 -reportprogress|300|./BCD_Add.sv|
+!i113 1
+Z12 tCvgOpt 0
+n@b@c@d_@add
+vBCD_Add_testbench
+R1
+R2
+!i10b 1
+!s100 QFl5;L;VmV92IMcc_EQ[]0
+IOK^M@O`5WUzib?U>6KnW<1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 35
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@b@c@d_@add_testbench
+vFourBitAdder
+R1
+R2
+!i10b 1
+!s100 1j:cndQ4ae5ZVTh:5o;BT2
+I1`MjB;TZLdUe^8MiTH;fz0
+R3
+Z13 !s105 FourBitAdder_sv_unit
+S1
+R0
+Z14 w1524801290
+Z15 8./FourBitAdder.sv
+Z16 F./FourBitAdder.sv
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+Z17 !s107 ./FourBitAdder.sv|
+Z18 !s90 -reportprogress|300|./FourBitAdder.sv|
+!i113 1
+R12
+n@four@bit@adder
+vFourBitAdder_testbench
+R1
+R2
+!i10b 1
+!s100 ;^oD0:[@i6NQieaf91>E43
+I3helZ9[9NN];cXo^4jj601
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 24
+R8
+r1
+!s85 0
+31
+R9
+R17
+R18
+!i113 1
+R12
+n@four@bit@adder_testbench
+vFullAdder
+R1
+R2
+!i10b 1
+!s100 hTW6`RZ^i5X=Ja<hT7A[U3
+IW_gAOLz6H7z<J4^DlIKT=0
+R3
+Z19 !s105 FullAdder_sv_unit
+S1
+R0
+Z20 w1524794738
+Z21 8./FullAdder.sv
+Z22 F./FullAdder.sv
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+Z23 !s107 ./FullAdder.sv|
+Z24 !s90 -reportprogress|300|./FullAdder.sv|
+!i113 1
+R12
+n@full@adder
+vFullAdder_testbench
+R1
+R2
+!i10b 1
+!s100 fQ`[YK^JRX?0CiO[Aeh`72
+IdTLzldlVDH`SL;dUhI8oX2
+R3
+R19
+S1
+R0
+R20
+R21
+R22
+L0 15
+R8
+r1
+!s85 0
+31
+R9
+R23
+R24
+!i113 1
+R12
+n@full@adder_testbench
+vTwo_digit_BCD_Add
+R1
+Z25 !s110 1524808847
+!i10b 1
+!s100 mKcLk?_XTBNHj`MQIa2@;2
+I[OQKNkSdFW;A1f>K=Ycc31
+R3
+Z26 !s105 Two_digit_BCD_Add_sv_unit
+S1
+R0
+Z27 w1524808842
+Z28 8./Two_digit_BCD_Add.sv
+Z29 F./Two_digit_BCD_Add.sv
+L0 3
+R8
+r1
+!s85 0
+31
+Z30 !s108 1524808847.000000
+Z31 !s107 ./Two_digit_BCD_Add.sv|
+Z32 !s90 -reportprogress|300|./Two_digit_BCD_Add.sv|
+!i113 1
+R12
+n@two_digit_@b@c@d_@add
+vTwo_digit_BCD_Add_testbench
+R1
+R25
+!i10b 1
+!s100 L?:g=fEO<OikKhh0Og>C_1
+IO;Z=6:`>gc4OB5oZ<JMg;3
+R3
+R26
+S1
+R0
+R27
+R28
+R29
+L0 14
+R8
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R12
+n@two_digit_@b@c@d_@add_testbench

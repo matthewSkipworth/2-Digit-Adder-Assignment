@@ -1,0 +1,196 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:26:32 on Apr 26,2018
+# vlog -reportprogress 300 ./Bin_to_BCD.sv 
+# -- Compiling module Bin_to_BCD
+# -- Compiling module Bin_to_BCD_testbench
+# 
+# Top level modules:
+# 	Bin_to_BCD_testbench
+# End time: 18:26:32 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Bin_to_BCD_testbench 
+# Start time: 18:26:32 on Apr 26,2018
+# Loading sv_std.std
+# Loading work.Bin_to_BCD_testbench
+# Loading work.Bin_to_BCD
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# V    E    F
+#  0    0000    $4b 0
+# V    E    F
+#  1    0000    $4b 1
+# V    E    F
+#  2    0000    $4b 2
+# V    E    F
+#  3    0000    $4b 3
+# V    E    F
+#  4    0000    $4b 4
+# V    E    F
+#  5    0000    $4b 5
+# V    E    F
+#  6    0000    $4b 6
+# V    E    F
+#  7    0000    $4b 7
+# V    E    F
+#  8    0000    $4b 8
+# V    E    F
+#  9    0000    $4b 9
+# V    E    F
+# 10    0001    $4b 0
+# V    E    F
+# 11    0001    $4b 1
+# V    E    F
+# 12    0001    $4b 2
+# V    E    F
+# 13    0001    $4b 3
+# V    E    F
+# 14    0001    $4b 4
+# V    E    F
+# 15    0001    $4b 5
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:01 on Apr 26,2018
+# vlog -reportprogress 300 ./Bin_to_BCD.sv 
+# -- Compiling module Bin_to_BCD
+# -- Compiling module Bin_to_BCD_testbench
+# 
+# Top level modules:
+# 	Bin_to_BCD_testbench
+# End time: 18:27:01 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:27:02 on Apr 26,2018, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Bin_to_BCD_testbench 
+# Start time: 18:27:03 on Apr 26,2018
+# Loading sv_std.std
+# Loading work.Bin_to_BCD_testbench
+# Loading work.Bin_to_BCD
+# ** Error: Cannot open macro file: Bin_to_BCD_wave.do
+# Error in macro ./runlab.do line 18
+# Cannot open macro file: Bin_to_BCD_wave.do
+#     while executing
+# "do Bin_to_BCD_wave.do"
+add wave -position insertpoint  \
+sim:/Bin_to_BCD_testbench/i
+add wave -position insertpoint  \
+sim:/Bin_to_BCD_testbench/F
+add wave -position end  sim:/Bin_to_BCD_testbench/E
+add wave -position end  sim:/Bin_to_BCD_testbench/V
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/UWT/TCES330/labs/HW2/Part2/Bin_to_BCD_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:12 on Apr 26,2018
+# vlog -reportprogress 300 ./Bin_to_BCD.sv 
+# -- Compiling module Bin_to_BCD
+# -- Compiling module Bin_to_BCD_testbench
+# 
+# Top level modules:
+# 	Bin_to_BCD_testbench
+# End time: 18:28:12 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:28:13 on Apr 26,2018, Elapsed time: 0:01:10
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Bin_to_BCD_testbench 
+# Start time: 18:28:14 on Apr 26,2018
+# Loading sv_std.std
+# Loading work.Bin_to_BCD_testbench
+# Loading work.Bin_to_BCD
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# V    E    F
+#  0    0000    $4b 0
+# V    E    F
+#  1    0000    $4b 1
+# V    E    F
+#  2    0000    $4b 2
+# V    E    F
+#  3    0000    $4b 3
+# V    E    F
+#  4    0000    $4b 4
+# V    E    F
+#  5    0000    $4b 5
+# V    E    F
+#  6    0000    $4b 6
+# V    E    F
+#  7    0000    $4b 7
+# V    E    F
+#  8    0000    $4b 8
+# V    E    F
+#  9    0000    $4b 9
+# V    E    F
+# 10    0001    $4b 0
+# V    E    F
+# 11    0001    $4b 1
+# V    E    F
+# 12    0001    $4b 2
+# V    E    F
+# 13    0001    $4b 3
+# V    E    F
+# 14    0001    $4b 4
+# V    E    F
+# 15    0001    $4b 5
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:57 on Apr 26,2018
+# vlog -reportprogress 300 ./Bin_to_BCD.sv 
+# -- Compiling module Bin_to_BCD
+# -- Compiling module Bin_to_BCD_testbench
+# 
+# Top level modules:
+# 	Bin_to_BCD_testbench
+# End time: 18:29:57 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:29:59 on Apr 26,2018, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Bin_to_BCD_testbench 
+# Start time: 18:29:59 on Apr 26,2018
+# Loading sv_std.std
+# Loading work.Bin_to_BCD_testbench
+# Loading work.Bin_to_BCD
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# V    E    F
+#  0    0000    0000
+# V    E    F
+#  1    0000    0001
+# V    E    F
+#  2    0000    0010
+# V    E    F
+#  3    0000    0011
+# V    E    F
+#  4    0000    0100
+# V    E    F
+#  5    0000    0101
+# V    E    F
+#  6    0000    0110
+# V    E    F
+#  7    0000    0111
+# V    E    F
+#  8    0000    1000
+# V    E    F
+#  9    0000    1001
+# V    E    F
+# 10    0001    0000
+# V    E    F
+# 11    0001    0001
+# V    E    F
+# 12    0001    0010
+# V    E    F
+# 13    0001    0011
+# V    E    F
+# 14    0001    0100
+# V    E    F
+# 15    0001    0101
+# End time: 18:30:37 on Apr 26,2018, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 0

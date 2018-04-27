@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UWT/TCES330/labs/HW2/Part3
+vFour_Bit_Ripple_Carry_Adder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1524771677
+!i10b 1
+!s100 ULgFB6]705XT8h^f9kUJ`3
+IPGaUAZPDc[L9CW4?mdb`L2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Four_Bit_Ripple_Carry_Adder_sv_unit
+S1
+R0
+w1524634338
+8./Four_Bit_Ripple_Carry_Adder.sv
+F./Four_Bit_Ripple_Carry_Adder.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1524771677.000000
+!s107 ./Four_Bit_Ripple_Carry_Adder.sv|
+!s90 -reportprogress|300|./Four_Bit_Ripple_Carry_Adder.sv|
+!i113 1
+Z4 tCvgOpt 0
+n@four_@bit_@ripple_@carry_@adder
+vFourBitAdder
+R1
+Z5 !s110 1524796988
+!i10b 1
+!s100 ?b]2zWOL;6:fMH[H^[_2M3
+I:=:C3=:caC]f^Lh_^[Kca3
+R2
+Z6 !s105 FourBitAdder_sv_unit
+S1
+R0
+Z7 w1524796986
+Z8 8./FourBitAdder.sv
+Z9 F./FourBitAdder.sv
+L0 1
+R3
+r1
+!s85 0
+31
+Z10 !s108 1524796988.000000
+Z11 !s107 ./FourBitAdder.sv|
+Z12 !s90 -reportprogress|300|./FourBitAdder.sv|
+!i113 1
+R4
+n@four@bit@adder
+vFourBitAdder_testbench
+R1
+R5
+!i10b 1
+!s100 XlRUkE3k]blKniXhnb;_H1
+IXRJiJaYnTE]US9L0k96833
+R2
+R6
+S1
+R0
+R7
+R8
+R9
+L0 22
+R3
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R4
+n@four@bit@adder_testbench
+vFull_Adder
+R1
+!s110 1524794703
+!i10b 1
+!s100 3OE3o2NNo[bgh??FH1;[U1
+Ifbe@68DDI6UnaQzljMmCk2
+R2
+Z13 !s105 FullAdder_sv_unit
+S1
+R0
+w1524794536
+Z14 8./FullAdder.sv
+Z15 F./FullAdder.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1524794703.000000
+!s107 ./FullAdder.sv|
+Z16 !s90 -reportprogress|300|./FullAdder.sv|
+!i113 1
+R4
+n@full_@adder
+vFull_Adder_testbench
+R1
+!s110 1524794233
+!i10b 1
+!s100 QZUCO2I_olW417CNHZP4O3
+I=SSoM8LGG>76M9<[^?R4P2
+R2
+!s105 Full_Adder_sv_unit
+S1
+R0
+w1524794183
+8./Full_Adder.sv
+F./Full_Adder.sv
+Z17 L0 15
+R3
+r1
+!s85 0
+31
+!s108 1524794233.000000
+!s107 ./Full_Adder.sv|
+!s90 -reportprogress|300|./Full_Adder.sv|
+!i113 1
+R4
+n@full_@adder_testbench
+vFullAdder
+R1
+Z18 !s110 1524804021
+!i10b 1
+!s100 hTW6`RZ^i5X=Ja<hT7A[U3
+IW_gAOLz6H7z<J4^DlIKT=0
+R2
+R13
+S1
+R0
+Z19 w1524794738
+R14
+R15
+L0 3
+R3
+r1
+!s85 0
+31
+Z20 !s108 1524804021.000000
+Z21 !s107 ./FullAdder.sv|
+R16
+!i113 1
+R4
+n@full@adder
+vFullAdder_testbench
+R1
+R18
+!i10b 1
+!s100 fQ`[YK^JRX?0CiO[Aeh`72
+IdTLzldlVDH`SL;dUhI8oX2
+R2
+R13
+S1
+R0
+R19
+R14
+R15
+R17
+R3
+r1
+!s85 0
+31
+R20
+R21
+R16
+!i113 1
+R4
+n@full@adder_testbench

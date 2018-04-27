@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/TCES330/HW2/Part2
+vbin_to_BCD
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1524544995
+!i10b 1
+!s100 YYF;nPQ3KH<E_kBgA65QV0
+I0m`U?S>oN1OOiiHkS8nOP1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 bin_to_BCD_sv_unit
+S1
+R0
+w1524544846
+Z4 8./bin_to_BCD.sv
+Z5 F./bin_to_BCD.sv
+L0 4
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1524544995.000000
+Z7 !s107 ./bin_to_BCD.sv|
+Z8 !s90 -reportprogress|300|./bin_to_BCD.sv|
+!i113 1
+Z9 tCvgOpt 0
+nbin_to_@b@c@d
+vBin_to_BCD
+R1
+Z10 !s110 1524792597
+!i10b 1
+!s100 Qz1X6_Pk4hf`TaMNlL1:g2
+IXKfXe><8Mgf^<f]_1DzKo3
+R2
+Z11 !s105 Bin_to_BCD_sv_unit
+S1
+Z12 dC:/UWT/TCES330/labs/HW2/Part2
+Z13 w1524792593
+Z14 8./Bin_to_BCD.sv
+Z15 F./Bin_to_BCD.sv
+L0 4
+R6
+r1
+!s85 0
+31
+Z16 !s108 1524792597.000000
+Z17 !s107 ./Bin_to_BCD.sv|
+Z18 !s90 -reportprogress|300|./Bin_to_BCD.sv|
+!i113 1
+R9
+n@bin_to_@b@c@d
+vBin_to_BCD_testbench
+R1
+R10
+!i10b 1
+!s100 JH1[_IglML9e_g[S9g]3Y2
+IFedooW29zB=L1MiSWIHOb0
+R2
+R11
+S1
+R12
+R13
+R14
+R15
+L0 30
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R9
+n@bin_to_@b@c@d_testbench
+vbin_to_BCD_testbench
+R1
+!s110 1524621094
+!i10b 1
+!s100 OlPNW3Z_4@QKCXodjXP^m2
+I?YPBlAzBU>KzH[V;kF5h>0
+R2
+R3
+S1
+dE:/TCES330/HW2/Part2
+w1524621094
+R4
+R5
+L0 44
+R6
+r1
+!s85 0
+31
+!s108 1524621094.000000
+R7
+R8
+!i113 1
+R9
+nbin_to_@b@c@d_testbench

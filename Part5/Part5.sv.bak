@@ -1,0 +1,21 @@
+module Part5(SW, HEX7, HEX6, HEX5, HEX4, HEX2, HEX1, HEX0, LEDR);
+	input [17:0] SW;
+	output [17:0] LEDR;
+	output [0:6]  HEX7, HEX6, HEX5, HEX4, HEX2, HEX1, HEX0;
+	wire [3:0] red, orange, yellow, green, blue, indigo,  violet;
+	assign red = SW[15:12];
+	assign green = SW[11:8];
+	assign blue = SW[7:4];
+	assign violet = SW[3:0];
+	reg [2:0] Sum;
+	
+	Two_digit_BCD_Add A1(red, green, blue, violet, Sum);
+		
+		HexHEXI H0(HEX0, Sum[0]);	//S0
+		HexHEXI H1(HEX1, Sum[1]);	//S1	
+		HexHEXI H2(HEX2, Sum[2]);	//S2
+		HexHEXI H4(HEX4, violet);	//B0	
+		HexHEXI H5(HEX5, blue);		//B1
+		HexHEXI H6(HEX6, green);	//A0
+		HexHEXI H7(HEX7, red);		//A1	
+endmodule
